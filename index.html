@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Encriptador</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anek+Telugu:wght@300&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <img src="Imagenes/Logo.png" alt="Logo de Alura." />
+      <h2 style="margin-left: 80px; font-weight: 600">Desafío Alura/Oracle - Encriptador de Texto</h2>
+    </header>
+    
+    <main class="main">
+      <section>
+        <textarea class="input-texto" clos="20"  rows="3" placeholder="Ingrese su texto aqui" onkeyup="remplazar(this)"></textarea>
+        <div id="div-desaparece">
+          <h6 class="informacion">Emplear solo letras minusculas y omitir los acentos ortograficos.</h6>
+        </div>
+        <div class="botones">
+          <button class="encriptar" onclick="btnEncriptar()">Encriptar</button>
+          <button class="desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+        </div>
+      </section>
+
+      <section class="mensaje-box">
+        <textarea class="mensaje" cols="18" rows="8"></textarea>
+        <h3>Ingresa el texto que deseas encriptar o desencriptar.</h3>
+        <button class="copiar" onclick="copiar()">Copiar</button>
+      </section>
+    </main>
+    <footer>
+      <div>
+        <a href="https://www.linkedin.com/in/ezequiel-lorenz-27016b239/" target="_blank"><img src="Imagenes/linkedin.png" alt=""/></a>
+        <a href="https://twitter.com/EzeLorenz95" target="_blank"><img src="Imagenes/twitter.png" alt=""/></a>
+        <a href="https://github.com/ezelorenz" target="_blank"><img src="Imagenes/github.png" alt=""/></a>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
